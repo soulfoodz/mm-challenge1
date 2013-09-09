@@ -1,0 +1,249 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		52403C8117DBE30300AB691F /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 52403C8017DBE30300AB691F /* Foundation.framework */; };
+		52403C8417DBE30300AB691F /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 52403C8317DBE30300AB691F /* main.m */; };
+		52403C8817DBE30300AB691F /* SecondApp.1 in CopyFiles */ = {isa = PBXBuildFile; fileRef = 52403C8717DBE30300AB691F /* SecondApp.1 */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		52403C7B17DBE30300AB691F /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolderSpec = 0;
+			files = (
+				52403C8817DBE30300AB691F /* SecondApp.1 in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		52403C7D17DBE30300AB691F /* SecondApp */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = SecondApp; sourceTree = BUILT_PRODUCTS_DIR; };
+		52403C8017DBE30300AB691F /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		52403C8317DBE30300AB691F /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		52403C8617DBE30300AB691F /* SecondApp-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "SecondApp-Prefix.pch"; sourceTree = "<group>"; };
+		52403C8717DBE30300AB691F /* SecondApp.1 */ = {isa = PBXFileReference; lastKnownFileType = text.man; path = SecondApp.1; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		52403C7A17DBE30300AB691F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				52403C8117DBE30300AB691F /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		52403C7417DBE30300AB691F = {
+			isa = PBXGroup;
+			children = (
+				52403C8217DBE30300AB691F /* SecondApp */,
+				52403C7F17DBE30300AB691F /* Frameworks */,
+				52403C7E17DBE30300AB691F /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		52403C7E17DBE30300AB691F /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				52403C7D17DBE30300AB691F /* SecondApp */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		52403C7F17DBE30300AB691F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				52403C8017DBE30300AB691F /* Foundation.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		52403C8217DBE30300AB691F /* SecondApp */ = {
+			isa = PBXGroup;
+			children = (
+				52403C8317DBE30300AB691F /* main.m */,
+				52403C8717DBE30300AB691F /* SecondApp.1 */,
+				52403C8517DBE30300AB691F /* Supporting Files */,
+			);
+			path = SecondApp;
+			sourceTree = "<group>";
+		};
+		52403C8517DBE30300AB691F /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				52403C8617DBE30300AB691F /* SecondApp-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		52403C7C17DBE30300AB691F /* SecondApp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 52403C8B17DBE30300AB691F /* Build configuration list for PBXNativeTarget "SecondApp" */;
+			buildPhases = (
+				52403C7917DBE30300AB691F /* Sources */,
+				52403C7A17DBE30300AB691F /* Frameworks */,
+				52403C7B17DBE30300AB691F /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SecondApp;
+			productName = SecondApp;
+			productReference = 52403C7D17DBE30300AB691F /* SecondApp */;
+			productType = "com.apple.product-type.tool";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		52403C7517DBE30300AB691F /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0460;
+				ORGANIZATIONNAME = "MacBook Pro";
+			};
+			buildConfigurationList = 52403C7817DBE30300AB691F /* Build configuration list for PBXProject "SecondApp" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 52403C7417DBE30300AB691F;
+			productRefGroup = 52403C7E17DBE30300AB691F /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				52403C7C17DBE30300AB691F /* SecondApp */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		52403C7917DBE30300AB691F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				52403C8417DBE30300AB691F /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		52403C8917DBE30300AB691F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.8;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		52403C8A17DBE30300AB691F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.8;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		52403C8C17DBE30300AB691F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "SecondApp/SecondApp-Prefix.pch";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		52403C8D17DBE30300AB691F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "SecondApp/SecondApp-Prefix.pch";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		52403C7817DBE30300AB691F /* Build configuration list for PBXProject "SecondApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				52403C8917DBE30300AB691F /* Debug */,
+				52403C8A17DBE30300AB691F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		52403C8B17DBE30300AB691F /* Build configuration list for PBXNativeTarget "SecondApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				52403C8C17DBE30300AB691F /* Debug */,
+				52403C8D17DBE30300AB691F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 52403C7517DBE30300AB691F /* Project object */;
+}
