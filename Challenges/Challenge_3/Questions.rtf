@@ -1,0 +1,284 @@
+{\rtf1\ansi\ansicpg1252\cocoartf1187\cocoasubrtf390
+{\fonttbl\f0\fswiss\fcharset0 Helvetica;}
+{\colortbl;\red255\green255\blue255;}
+\margl1440\margr1440\vieww10880\viewh8400\viewkind0
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural
+
+\f0\fs24 \cf0 \
+
+\b 3.5 - Operators and Expressions\
+
+\b0 Logical\
+Comparison\
+Arithmetic\
+Modulus\
+Increment\
+Ternary - 'if-else' substitute\
+\
+\
+
+\b 3.6 - Loops
+\b0 \
+In your address book when you are searching for people whose name starts with 'A'\
+\
+\
+
+\b 3.7 - Functions
+\b0 \
+Function - A chunk of related code, wrapped up and given a name.\
+Function prototype - A description that tells the program the function exists prior to it being defined. It 	allows you to call a function prior to defining the function. \
+Rules for calling a function - \
+	You have to either define or declare the function prior to it being used\
+\
+\
+
+\b 4.1 - Data Types\
+
+\b0 int, float, double, char, BOOL\
+To make it easy to work with more complex data types\
+\
+
+\b 4.2 - Working with numbers
+\b0 \
+int, float, double - short, long, long long, signed, unsigned\
+\
+
+\b 4.3 - Working with characters
+\b0 \
+char - \
+BOOL - \
+\
+
+\b 4.4 - Variable scope
+\b0 \
+Most variables are local, and only exist within the curly braces they're defined in. \
+\
+
+\b 4.5 - Enumerations
+\b0 \
+Categorize a set of values for easy use in variables.\
+\
+
+\b 4.6 - Using typedef
+\b0 \
+I would use them together a lot. It's never cool to have to write "enum" before every variable. \
+\
+
+\b 4.7 - Preprocessor directives \
+
+\b0 #import - Tells the program to include the file being imported when the program is being processed. \
+#define - Creates a value and gives it a name for use throughout the file.  \
+#if DEBUG - \
+\
+
+\b 4.8 - Defining strings\
+
+\b0 NSString *string = @"Hello";\
+string *string = "Hello";\
+\
+NSString - This declared the variable will be of type NSString\
+* - This says it's a pointer to an NSString object\
+string - This is the name of the variable\
+@"Hello" - This is the strings value\
+\
+
+\b 5.1 - Intro to Obj. orientation
+\b0 \
+Attributes: name, age, hometown\
+Behaviours: eat, sleep, study, code\
+\
+MobileMakersParticipant *eric;\
+eric.name = @"Eric Webb";\
+eric.age = 28;\
+eric.hometown = @"Austin";\
+\
+
+\b 5.2 - Using objects and pointers\
+
+\b0 When the object is instantiated, a block of memory is allocated for the object. The pointer holds the address to that block of memory, which is where the objects value is stored. \
+With a primitive, the variable itself holds the value, whereas with a pointer, the pointer holds the address. the variable itself doesn't hold any value.\
+\
+
+\b 5.3 - Messages and methods\
+
+\b0 Syntax. In others, dot notation is the primary syntax. In Obj-c, we use brackets and accept arguments following a colon. \
+It allows us to write methods that read as they would in normal speech. \
+\
+
+\b 5.4 - Using existing classes in the foundation framework \
+
+\b0 Class methods are called on the class. Instance methods are called on objects. \
+\
+
+\b 6.2 - Memory mgmt. in Obj-C
+\b0 \
+The pointer is the link between all of them. \
+Ex:\
+Let's say I have 10 safe deposit boxes paired with 10 keys that are clearly labeled. \
+All is good. Each key owns a deposit box.\
+Losing a key = memory leak\
+A box's contents being accidentally thrown out = dangling pointer\
+\
+So, when we have all the keys clearly labeled for all the deposit boxes, we're in good shape. As owners take their contents home, and new owners content is placed in the boxes, we have to relabel the keys to maintain the clear relationship between each box and its key. \
+If the box is mine, I'm responsible for it. \
+\
+
+\b 6.3 - Object creation\
+
+\b0 It allocates and initializes the object. \
+Because we often need to initialize objects in different ways, like when we init an obj with properties\
+The objects lifetime extends until its value is taken/used by another obj. \
+\
+
+\b 6.4 - Using autorelease pool\
+
+\b0 When we autorelease an obj, it sticks around until the autorelease pool is drained at the end of the event loop. At that point, the retain count is reduced along with all the other objects we sent the autorelease message to. \
+\
+You use it deliberately when you have a method that creates and returns an object. \
+ \
+
+\b 6.5 - Apple autoreleased objects
+\b0 \
+
+\b N
+\b0 ew\
+
+\b A
+\b0 lloc\
+
+\b R
+\b0 etain\
+
+\b C
+\b0 opy\
+If you see those messages called, you need to release the object they are associated with. \
+\
+
+\b 6.6 - Intro to ARC
+\b0 \
+It saves us from having to release and retain objects\
+It automatically counts references to objects and releases them at the best time.\
+\
+
+\b 6.7 - What ARC manages
+\b0 \
+ARC is done at compile time, not run time. \
+No change to runtime model\
+You don't have nondeterministic finalization, slowing down apps, and making them unpredictable. \
+\
+
+\b 6.8 - The rules of ARC
+\b0 \
+Because ARC handles memory deallocation for you. \
+\
+
+\b 7.1 - Creating your own classes
+\b0 \
+.h = interface\
+	Interface file holds the public variables, properties and method declarations\
+.m = implementation\
+	Implementation holds the method definitions, properties that need to be synthesized, and any \
+	variables that need to be private.\
+\
+
+\b 7.3 - Defining properties \
+
+\b0 Variables were put in the .m/.h files and setter/getter methods are written.\
+Now, they are handled as properties\
+We no longer have to write accessor methods, and we can use dot syntax is how it got easier. \
+\
+
+\b 7.4 - Defining initializers\
+
+\b0 They create our new objects
+\b . 
+\b0 Alloc reserves the space needed for a new object, and the -init method actually creates the new object. 
+\b \
+
+\b0 Whenever we want to initialize an object with a custom value, we need to create a custom init method. Let's say a user has to register in order to sign up for our app. It makes the most sense to go ahead and initialize the new user object with his name, email, etc. as opposed to creating a user and then adding his info to the user object. \
+\
+
+\b 7.5 - Using dealloc
+\b0 \
+When we write a dealloc method, we're not actually writing it for the purpose of calling it ourselves to deallocate an object. It's a set of instructions for the computer to process when it auto deallocates the object\'85cleanup code.\
+\
+
+\b \
+8.1 - Working with C-style arrays
+\b0 \
+1) No bounds checking\
+2) Fixed size\
+3) Can't mix types\
+\
+
+\b 8.2 - Working with Obj-C array objects\
+
+\b0 Mutable arrays allow objects to be added and removed. \
+Immutable arrays (standard NSArrays) don't change once they are created.\
+\
+\
+
+\b 9.1 - Intro to file mgmt in obj-c\
+
+\b0 Print their attributes\
+Move them to a new path\
+Copy the file\
+Remove the file\
+Check to see if it exists\
+\
+
+\b 9.2 - Working with paths and URLs\
+
+\b0 The 3 parts of a URL are:\
+Scheme, domain, path\
+\
+NSURLs are:\
+Faster than using string paths\
+Better for catching errors\
+Used by more classes\
+\
+
+\b 9.3 - Reading and writing strings
+\b0 \
+It's more permanent when it's saved to disk\
+\
+
+\b 9.4 - Archiving objects
+\b0 \
+I'm not sure ***************************\
+\
+\
+
+\b 10.1 - Inheritance and NSObject
+\b0 \
+You inherit all of them automagically\
+You override it. You enter the method to your .m file, just as it is, without changing the return value or parameters. You then change the code within the curly braces to do what you need. \
+
+\b \
+10.2 - Extending classes with categories
+\b0 \
+A category is an extension of an existing class. It's meant to ADD capability to an existing class, and can be imported to multiple files in your class. Inheritance means a subclass gains the use of all it's parent classes methods and properties for its own use/adaptation. Sometimes, you don't want/need a new subclass. You just need a bit of extra functionality added to an existing class. That's when you create a category. \
+\
+You cannot add new ivars to a category, and you generally don't modify existing methods in it either. \
+\
+
+\b 10.3 - Defining protocols
+\b0 \
+They ensure that standards are met. It's a set of methods required to accomplish something. Sometimes, there are optional methods for added functionality included as well. \
+\
+
+\b 10.4 - Dynamic typing
+\b0 \
+
+\i\b Advantages:
+\i0\b0  flexibility
+\i\b \
+Disadvantages: 
+\i0\b0 You have to implement check to ensure ivars and the appropriate methods are matched. \
+\
+\
+\
+\
+\
+\
+}
